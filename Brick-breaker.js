@@ -5,7 +5,7 @@ let playerScore = 0
 function setup () {
   createCanvas(window.innerWidth, window.innerHeight)
   bar = createSprite(width / 2, height - 100, 150, 15)
-  bar.shapeColor = color(198, 190, 250)
+  bar.shapeColor = color(255)
   bar.immovable = true
 
   wallTop = createSprite(1, +40, 5000, 1) 
@@ -69,9 +69,9 @@ function draw () {
   noStroke()
   rect(0, 0, window.innerWidth,40 );
   
-   fill(200);
-   textSize(20);
-   text(`Score:${playerScore}`, width/2, 30);
+  fill(198, 190, 250);
+  textSize(20);
+  text(`Score:${playerScore}`, width/2, 30);
    
   drawSprites()
 }
