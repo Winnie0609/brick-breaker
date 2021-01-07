@@ -5,7 +5,7 @@ let playerScore = 0
 function setup () {
   createCanvas(window.innerWidth, window.innerHeight)
   bar = createSprite(width / 2, height - 100, 150, 15)
-  bar.shapeColor = color(255)
+  bar.shapeColor = color(198, 190, 250)
   bar.immovable = true
 
   wallTop = createSprite(1, +40, 5000, 1) 
@@ -24,7 +24,7 @@ function setup () {
   generatebricks()
 
   ball = createSprite(width / 2, height - 150, 15, 15)
-  ball.shapeColor = color(0, 0, 250)
+  ball.shapeColor = color(198, 190, 250)
 }
 
 function generatebricks (){
@@ -93,7 +93,6 @@ function hitBrick (ball, brick) {
 }
 
 function hitonwallbottom(ball, wallbottom){
-    console.log('asd')
     bricks.removeSprites()
     generatebricks()
     fire = false
