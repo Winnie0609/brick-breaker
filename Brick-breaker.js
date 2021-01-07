@@ -63,13 +63,12 @@ function draw () {
   ball.bounce(wallRight)
   ball.bounce(wallLeft)
   ball.bounce(wallbottom, hitonwallbottom )
-
-  let c = color(0, 0, 100); 
-  fill(c)
-  noStroke()
-  rect(0, 0, window.innerWidth,40 );
   
-  fill(198, 190, 250);
+  fill(198, 190, 250)
+  noStroke()
+  rect(0, 0, window.innerWidth, 40);
+  
+  fill(255);
   textSize(20);
   text(`Score:${playerScore}`, width/2, 30);
    
